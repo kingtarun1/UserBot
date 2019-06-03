@@ -17,9 +17,7 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 UNAPPROVED_MSG = ("I'm busy right now, will reply you soon!\n\n"
-                  "Mai abhi busy hu, jaada mgs kia toh block."
-                  " Please wait for my master to look in, he mostly approves PMs.\n\n"
-                  "As far as I know, he doesn't usually approve retards though.")
+                  "Mai abhi busy hu, jaada mgs kia toh block.")
 # =================================================================
 
 
