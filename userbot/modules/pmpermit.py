@@ -16,8 +16,8 @@ from userbot import (COUNT_PM, CMD_HELP, BOTLOG, BOTLOG_CHATID,
 from userbot.events import register
 
 # ========================= CONSTANTS ============================
-UNAPPROVED_MSG = ("Bleep blop! This is a bot. Don't fret.\n\n"
-                  "My master hasn't approved you to PM."
+UNAPPROVED_MSG = ("I'm busy right now, will reply you soon!\n\n"
+                  "Mai abhi busy hu, jaada mgs kia toh block."
                   " Please wait for my master to look in, he mostly approves PMs.\n\n"
                   "As far as I know, he doesn't usually approve retards though.")
 # =================================================================
