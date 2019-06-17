@@ -489,3 +489,47 @@ async def typewriter(typew):
 CMD_HELP.update({
     "memes": "Ask Thoncc (@Skittles9823Bot) for that."
 })
+
+RAPE_STRINGS = [
+     "Rape Done Drink The Cum",
+     "The user has been successfully raped",
+     "Dekho Bhaiyya esa hai! Izzat bachailo apni warna Gaand maar lenge tumhari",
+     "Relax your Rear, ders nothing to fear,The Rape train is finally here",
+     "Rape coming... Raped! haha ??",
+     "Lodu Andha hai kya Yaha tera rape ho raha hai aur tu abhi tak yahi gaand mara raha hai lulz",
+] 
+ABUSE_STRINGS = [
+       "Madharchod",
+     "Gaandu",
+     "Chutiya he rah jaye ga",
+     "Ja be Gaandu",
+     "Ma ka Bhodsa madharchod",
+     "mml",
+]
+
+@register(outgoing=True, pattern="^.rape$")
+async def raping (raped):
+    """ Dont Rape Too much -_-"""
+    if not raped.text[0].isalpha() and raped.text[0] not in ("/", "#", "@", "!"):
+        index = random.randint(0, len(RAPE_STRINGS) - 1)
+        reply_text = RAPE_STRINGS[index]
+        await raped.edit(reply_text)
+
+@register(outgoing=True, pattern="^.abuse$")
+async def abusing (abused):
+    """ Dont Abuse Too much bsdk -_-"""
+    if not abused.text[0].isalpha() and abused.text[0] not in ("/", "#", "@", "!"):
+        index = random.randint(0, len(ABUSE_STRINGS) - 1)
+        reply_text = ABUSE_STRINGS[index]
+        await abused.edit(reply_text)
+
+
+@register(outgoing=True, pattern="^.hack$")
+async def hacking (hacked):
+    """ Dont Hack Too much -_-"""
+    if not hacked.text[0].isalpha() and hacked.text[0] not in ("/", "#", "@", "!"):
+        if await hacked.get_reply_message():
+            await hacked.edit(
+                "`Targeted Account Hacked successfully ??......`\n"
+                "Pay 6969$ to @kingtarun1 `To Remove This Hack...`\n"
+            )
